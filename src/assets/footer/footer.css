@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 100%;
+    bottom: -290vh;
+    font-weight: 400;
+}
+
+.col {
+    flex: 1;
+    padding: 1rem;
+}
+
+.col h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #3cb6ab;
+}
+
+.col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.col ul li {
+    padding: 5px 0;
+}
+
+.col a {
+    color: rgba(151, 151, 151, 0.7);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.col a:hover {
+    color: white;
+}
+
+.col:first-child {
+    padding-left: 5rem;
+}
+
+.col:last-child {
+    padding-right: 5rem;
+}
+
+form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 70%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: rgba(255, 255, 255, 0.6) solid 1px;
+    background: rgba(255, 255, 255, 0);
+    transition: border 0.2s ease;
+}
+
+input:focus {
+    border: 1px solid #3cb6ab;
+    color: white;
+}
+
+button {
+    width: auto;
+    min-width: 100px;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: rgba(255, 255, 255, 0.6) solid 1px;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #3cb6ab;
+    color: black;
+    border: #3cb6ab solid 1px;
+}
+
+.social {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.social a {
+    margin-right: 1rem;
+    color: #3cb6ab;
+    transition: color 0.2s ease;
+}
