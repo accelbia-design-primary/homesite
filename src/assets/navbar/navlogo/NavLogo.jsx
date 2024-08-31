@@ -27,13 +27,11 @@ const NavLogo = () => {
                 {
                     color: isTop ? '#3cb6ab' : '#fff',
                 }
-            }>accelbia</span>
-            <span style={
-                {
-                    color: isTop ? '#fff' : 'rgba(255, 255, 255, 0.6)',
-                    fontSize: isTop ? '5rem' : '1rem',
-                }
-            }>.design</span>
+            }
+            id="accelbia">accelbia</span>
+            <span 
+            className={isTop? 'logo-at-top' : 'logo-scrolled'}
+            id="design">.design</span>
         </a>
         </div>
     );

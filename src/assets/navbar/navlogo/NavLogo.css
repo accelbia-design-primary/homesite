@@ -8,6 +8,37 @@ navbar-logo {
     margin-left: 1rem;
 }
 
-.logo {
-    margin-left: 1rem;
+.navbar-logo {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 2rem;
+    transition: font-size 0.3s ease;
+}
+
+.logo-at-top {
+    color: white;
+    font-size: 5rem;
+}
+
+.logo:hover .logo-at-top {
+    color: #3cb6ab;
+}
+
+.logo-scrolled {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+}
+
+.logo:hover .logo-scrolled {
+    color: #3cb6ab;
+    ;
+    font-size: 1.2rem;
+}
+
+#design {
+    transition: all 0.3s ease;
 }

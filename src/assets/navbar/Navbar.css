@@ -42,11 +42,11 @@
 @keyframes appear_after_navload {
     0% {
         opacity: 0;
-        transform: translateY(-1rem);
+        transform: translateX(-1rem);
     }
     50% {
         opacity: 0;
-        transform: translateY(-1rem);
+        transform: translateX(-1rem);
     }
     100% {
         opacity: 1;
@@ -61,7 +61,7 @@
     color: rgba(148, 148, 148, 1);
     transition: all 0.3s ease;
     font-weight: 400;
-    animation: appear_after_navload 6s ease;
+    animation: appear_after_navload 2s ease;
 }
 
 .navbar button:hover {
