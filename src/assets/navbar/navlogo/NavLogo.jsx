@@ -15,7 +15,6 @@ const NavLogo = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [isTop]);
 
-
     return (
         <div className="logo">
         <a href="/" className="navbar-logo" style={
