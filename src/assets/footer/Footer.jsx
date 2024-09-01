@@ -20,30 +20,30 @@ const Footer = () => {
                             color: "rgba(255, 255, 255, 0.5)",
                             fontWeight: "300"
                         }
-                    }> Subscribe to our newsletter</h4>
+                    }> Wanna stay posted?</h4>
 
                     <input type="email" name="email" id="email" placeholder="Email Address" />
                     <button type="button">Subscribe</button>
                 </form>
 
                 <div className="social">
-                    <SocialIcon url="https://x.com/" target="_blank" bgColor="#fff" fgColor="#000" style={{
+                    <SocialIcon url="https://x.com/accelbia_design" target="_blank" bgColor="#fff" fgColor="#000" style={{
                         height: 30,
                         width: 30
                     }}/>
-                    <SocialIcon url="https://facebook.com/" target="_blank" bgColor="#fff" fgColor="#000" style={{
+                    <SocialIcon url="https://www.facebook.com/accelbia.design/" target="_blank" bgColor="#fff" fgColor="#000" style={{
                         height: 30,
                         width: 30
                     }}/>
-                    <SocialIcon url="https://instagram.com/" target="_blank" bgColor="#fff" fgColor="#000" style={{
+                    <SocialIcon url="https://instagram.com/accelbia.design" target="_blank" bgColor="#fff" fgColor="#000" style={{
                         height: 30,
                         width: 30
                     }}/>
-                    <SocialIcon url="https://linkedin.com/" target="_blank" bgColor="#fff" fgColor="#000" style={{
+                    <SocialIcon url="https://www.linkedin.com/company/accelbia-design/" target="_blank" bgColor="#fff" fgColor="#000" style={{
                         height: 30,
                         width: 30
                     }}/>
-                    <SocialIcon url="https://youtube.com/" bgColor="#fff" fgColor="#000" style={{
+                    <SocialIcon url="https://www.youtube.com/@accelbia.design" bgColor="#fff" fgColor="#000" style={{
                         height: 30,
                         width: 30
                     }}/>
