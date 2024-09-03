@@ -12,27 +12,15 @@ export const CheckUserDevice = () => {
 
     // if not desktop
     if (UserDevice !== "Desktop") {
-        return ( <div style = {
-                {
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    backgroundColor: "rgba(0, 0, 0, 0.5)",
-                    zIndex: 9999,
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    color: "white",
-                    fontSize: "2rem",
-                    textAlign: "center"
-                }
-
-
-            } >
+        return ( 
             <div className = "overlay" >
-            <p > Device not supported. Please check back later. </p> </div> </div>
+                <div className = "overlay-content" >
+                    <h1> Device Incompatible </h1> 
+                    <h2> for some time... I'm working on it :(</h2> 
+                    <h2> Till then, maybe use a desktop instead?</h2>
+                    <h1>🥺👉👈</h1>
+                </div>
+            </div> 
         );
     }
 
