@@ -8,8 +8,9 @@ import Background from "./assets/bg/Background";
 import Navbar from "./assets/navbar/Navbar";
 
 const App = () => {
-    const [isOpaque, setOpaque] = useState(false);
 
+    // Navbar opacity change on scroll
+    const [isOpaque, setOpaque] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 10) {
@@ -18,14 +19,27 @@ const App = () => {
                 setOpaque(false);
             }
         }
-
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [isOpaque]);
 
+    // Check if user is on a mobile device or desktop
+    const [UserDevice, setUserDevice] = useState(null);
+    useEffect(() => {
+        const userAgent = navigator.userAgent;
+        const isNotDesktop = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+        setUserDevice(isNotDesktop ? "Mobile" : "Desktop");
+    }, [UserDevice]);
+
+
+    if (UserDevice !== "Desktop") {
+      return (
+        <CheckUserDevice />
+      )
+    }
+
     return (
       <>
-        <CheckUserDevice />
         <AnimatedCursor
           innerSize={8}
           outerSize={8}
