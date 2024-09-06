@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./checkUserDevice.css";
+import "./incompatible-device.css";
 
 export const CheckUserDevice = () => {
     const [UserDevice, setUserDevice] = useState(null);
