@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 // User device check
-import CheckUserDevice from './assets/pages/checkuserdevice/checkUserDevice';
-import { HomePage } from "./assets/pages/home/home";
+import CheckUserDevice from './assets/pages/incompatible-device/incompatible-device';
+import HomePage from "./assets/pages/home/home";
 
 const App = () => {
 
