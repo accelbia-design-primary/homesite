@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 .footer {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.7);
-    position: absolute;
     width: 100%;
-    bottom: -290vh;
+    bottom: 0;
     font-weight: 400;
 }
 
