@@ -25,7 +25,31 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         }
     }
-    , [screenWidth, screenHeight, scrollY]);
+        , [screenWidth, screenHeight, scrollY]);
+
+    const button_redirect = (e) => {
+        const button = e.target.id;
+        switch (button) {
+            case 'about':
+                window.location.href = '/about';
+                break;
+            case 'contact':
+                window.location.href = '/contact';
+                break;
+            case 'explore':
+                window.location.href = '/explore';
+                break;
+            case 'work_with_us':
+                window.location.href = '/work_with_us';
+                break;
+            case 'blog':
+                window.location.href = 'https://blog.accelbia.design';
+                break;
+            default:
+                break;
+        }
+    }
+
 
     return (<>
         <nav className='navbar' style={
@@ -33,20 +57,20 @@ const Navbar = () => {
                 transition: 'all 0.5s ease',
                 backgroundColor: scrollY > 10 ? 'rgba(0, 0, 0, 0.3)' : 'transparent',
                 backdropFilter: scrollY > 10 ? 'blur(10px)' : 'none',
-                borderBottom: scrollY > 10 ? 'none': '1px solid rgba(255, 255, 255, 0.2)',
+                borderBottom: scrollY > 10 ? 'none' : '1px solid rgba(255, 255, 255, 0.2)',
             }
         }>
-            <NavLogo/>
+            <NavLogo />
             <div className="navbar-right" style={
                 {
                     flexDirection: scrollY < 10 ? 'column' : 'row',
                 }
             }>
-                <button type="button" id='about'>About</button>
-                <button type="button" id="contact">Contact</button>
-                <button type="button" id="explore">Explore</button>
-                <button type="button" id="work_with_us">Work With Us</button>
-                <button type="button" id="blog">Blog</button>
+                <button type="button" id='about' onClick={button_redirect}>About</button>
+                <button type="button" id="contact" onClick={button_redirect}>Contact</button>
+                <button type="button" id="explore" onClick={button_redirect}>Explore</button>
+                <button type="button" id="work_with_us" onClick={button_redirect}>Work With Us</button>
+                <button type="button" id="blog" onClick={button_redirect}>Blog</button>
             </div>
         </nav>
     </>);

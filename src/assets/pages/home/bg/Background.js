@@ -30,7 +30,7 @@ const Background = (data) => {
         top: 0,
         left: 0,
         width: "100%",
-        height: "150%",
+        height: "210%",
         zIndex: -1,
       }}
     ></div>
